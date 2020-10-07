@@ -2,6 +2,10 @@ import hashlib
 import fire
 
 class Chksum:
+    
+    def md5(self, filename):
+        md5 = hashlib.md5()
+        self._verify(filename, md5)
 
     def sha1(self, filename):
         sha1 = hashlib.sha1()
